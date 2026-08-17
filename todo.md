@@ -8,5 +8,5 @@
 - [x] Add unit and API test coverage for valid, invalid, unauthorized, and review transition paths.
 - [x] Add Docker development configuration and GitHub Actions CI.
 - [x] Author the required structured README with exactly five Mermaid diagrams and exact owner details.
-- [ ] Run all checks, publish publicly, verify GitHub state, and record the project in the ledger.
+- [x] Run all checks, publish publicly, verify GitHub state, and record the project in the ledger.
 - [x] Complete API and browser based smoke checks for the evidence review workspace.
