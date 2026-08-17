@@ -1,0 +1,19 @@
+services:
+  api:
+    build: ./backend
+    environment:
+      DATABASE_PATH: /data/evidence.db
+    volumes:
+      - evidence-data:/data
+    ports:
+      - "8100:8100"
+  web:
+    image: node:22-alpine
+    working_dir: /workspace
+    volumes:
+      - ./frontend:/workspace
+    command: sh -c "corepack enable && pnpm install && pnpm dev"
+    ports:
+      - "10210:10210"
+volumes:
+  evidence-data:
